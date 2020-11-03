@@ -29,5 +29,8 @@ export const selectSessionExpireWarning = createSelector(
 
 export const selectTopBanner = createSelector(
     [movieSelector],
-    (movies) => movies.top3
+    (movies) => {
+       console.log(movies.top3)
+       return movies.top3
+    }
 )

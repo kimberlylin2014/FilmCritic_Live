@@ -7,6 +7,7 @@ import { createStructuredSelector } from 'reselect';
 import { selectSessionExpireWarning } from './redux/movie/movie.selectors';
 import SpinnerLazy from './components/spinnerLazy/spinnerLazy.component';
 import ErrorBoundary from './components/errorBoundary/errorBoundary.component';
+
 const NotFoundPage = lazy(() => import('./pages/notFoundPage/notFoundPage.component'));
 const Register = lazy(() => import('./pages/register/register.component'));
 const PrivateHome = lazy(() => import('./pages/privateHome/privateHome.component'));
