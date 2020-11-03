@@ -12,10 +12,10 @@ class Top3Banner extends React.Component {
         super(props)
     }
 
-    componentDidMount() {
-        const {getFavoriteMovieReviewsStart} = this.props;
-        getFavoriteMovieReviewsStart();
-    }
+    // componentDidMount() {
+    //     const {getFavoriteMovieReviewsStart} = this.props;
+    //     getFavoriteMovieReviewsStart();
+    // }
 
     render(){
         const {top3} = this.props;
