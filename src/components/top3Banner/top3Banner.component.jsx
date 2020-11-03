@@ -14,6 +14,7 @@ class Top3Banner extends React.Component {
 
     componentDidMount() {
         const {getFavoriteMovieReviewsStart} = this.props;
+        console.log('function being called');
         getFavoriteMovieReviewsStart();
     }
 
@@ -29,7 +30,7 @@ class Top3Banner extends React.Component {
                     </div>
                     {top3.map(movieData => {
                         console.log(movieData)
-                        return  <div className='col-md-12 col-lg-3'>
+                        return  <div className='col-md-12 col-lg-3' key={movieData.imdbID}>
                             <Top3MovieReviews {...movieData} key={movieData.imdbID}/>
                         </div>
                     })}
