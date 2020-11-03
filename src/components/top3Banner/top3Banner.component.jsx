@@ -19,6 +19,7 @@ class Top3Banner extends React.Component {
 
     render(){
         const {top3} = this.props;
+        console.log(this.props)
         return(
             <div className='Top3Banner'>             
                 <div className='row justify-content-center align-items-center'>
@@ -47,6 +48,5 @@ const mapDispatchToProps = (dispatch) => {
 const mapStateToProps = createStructuredSelector({
     top3: selectTopBanner
 })
-
 
 export default connect(mapStateToProps, mapDispatchToProps)(Top3Banner);

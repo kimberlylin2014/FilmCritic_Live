@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {HashRouter} from 'react-router-dom';
+import {BrowserRouter} from 'react-router-dom';
 // Redux
 import {Provider} from 'react-redux';
 import {store, persistor} from './redux/store';
@@ -14,14 +14,13 @@ import ScrollToTopComponent from './components/scrollToTop/scrollToTop.component
 
 ReactDOM.render(
   <Provider store={store}>
-      <HashRouter>
+      <BrowserRouter>
         <PersistGate persistor={persistor}>
           <ScrollToTopComponent>
              <App />
           </ScrollToTopComponent>
-       
         </PersistGate>
-      </HashRouter>
+      </BrowserRouter>
   </Provider>,
   document.getElementById('root')
 );
