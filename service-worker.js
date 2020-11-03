@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/FilmCritic_Live/precache-manifest.29a6179b1fca941baadc4032dfc7b2f3.js"
+  "/FilmCritic_Live/precache-manifest.98d0f89cd9c483a72b3275310c4c461a.js"
 );
 
 self.addEventListener('message', (event) => {
