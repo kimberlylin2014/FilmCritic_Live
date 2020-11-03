@@ -1,0 +1,32 @@
+.DetailedMovieInfo {
+        margin: 30px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        .title-img {
+            // margin-right: 1%;
+            padding: 6px;
+            background-color: #ffffff;
+        }
+        .details {
+            width: 55%;
+            margin-left: 1%;
+            background-color: #ffffff;
+            padding: 10px;
+            @media (max-width: 786px) {
+                width: 100%;
+                margin-top: 20px;
+            }
+            p {
+                font-size: 18px;
+                margin: 2px 0;
+                color: #222831;
+            }
+            .bold-text {
+                font-weight: 600;
+                color: #222831;
+                font-size: 19px;
+            }
+        }
+}

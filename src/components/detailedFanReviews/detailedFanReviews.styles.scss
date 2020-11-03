@@ -1,0 +1,26 @@
+.DetailedFanReviews {
+    width: 86%;
+    margin: 30px auto 50px;
+    .row {
+        .col-md-6, .col-sm-12 {
+            margin-bottom: 16px;
+        }
+    }
+    .review-btn{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin: 8px 0;
+        h3 {
+            margin: 0;
+            color:#e4f9ff;
+        }
+    }
+    hr {
+        margin-bottom: 18px;
+    }
+    .no-reviews {
+        font-size: 18px;
+        color:#e4f9ff;
+    }
+}
