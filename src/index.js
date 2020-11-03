@@ -14,7 +14,7 @@ import ScrollToTopComponent from './components/scrollToTop/scrollToTop.component
 
 ReactDOM.render(
   <Provider store={store}>
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <PersistGate persistor={persistor}>
           <ScrollToTopComponent>
              <App />
