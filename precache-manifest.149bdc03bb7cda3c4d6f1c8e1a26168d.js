@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "060257ccf11914e618500f73ba0684de",
+    "revision": "9f53e5d0053f5c350802291c87aedb86",
     "url": "/FilmCritic_Live/index.html"
   },
   {
@@ -20,7 +20,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/FilmCritic_Live/static/css/13.57255f99.chunk.css"
   },
   {
-    "revision": "8e3022c8defeb5c63c8d",
+    "revision": "c406176b96c901683605",
     "url": "/FilmCritic_Live/static/css/4.d9ad5f5c.chunk.css"
   },
   {
@@ -32,7 +32,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/FilmCritic_Live/static/css/6.01b2fa3a.chunk.css"
   },
   {
-    "revision": "b2f96a6f097f84f0d693",
+    "revision": "60a6b4ca6fd84d97557b",
     "url": "/FilmCritic_Live/static/css/7.51bdf069.chunk.css"
   },
   {
@@ -44,7 +44,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/FilmCritic_Live/static/css/9.bcb6155b.chunk.css"
   },
   {
-    "revision": "aaf3d13222f0f77716b3",
+    "revision": "3470a87043f24976c119",
     "url": "/FilmCritic_Live/static/css/main.5ab3fb3d.chunk.css"
   },
   {
@@ -72,12 +72,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/FilmCritic_Live/static/js/13.9209d39d.chunk.js"
   },
   {
-    "revision": "8e3022c8defeb5c63c8d",
-    "url": "/FilmCritic_Live/static/js/4.b7153a16.chunk.js"
+    "revision": "c406176b96c901683605",
+    "url": "/FilmCritic_Live/static/js/4.cbf6667a.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/FilmCritic_Live/static/js/4.b7153a16.chunk.js.LICENSE.txt"
+    "url": "/FilmCritic_Live/static/js/4.cbf6667a.chunk.js.LICENSE.txt"
   },
   {
     "revision": "f6acf72500b4658c033e",
@@ -88,8 +88,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/FilmCritic_Live/static/js/6.cc871599.chunk.js"
   },
   {
-    "revision": "b2f96a6f097f84f0d693",
-    "url": "/FilmCritic_Live/static/js/7.4fcde59a.chunk.js"
+    "revision": "60a6b4ca6fd84d97557b",
+    "url": "/FilmCritic_Live/static/js/7.369df850.chunk.js"
   },
   {
     "revision": "6ee18f78b801afca37c1",
@@ -100,11 +100,11 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/FilmCritic_Live/static/js/9.0ceb73e4.chunk.js"
   },
   {
-    "revision": "aaf3d13222f0f77716b3",
-    "url": "/FilmCritic_Live/static/js/main.b6dc886a.chunk.js"
+    "revision": "3470a87043f24976c119",
+    "url": "/FilmCritic_Live/static/js/main.c91feb12.chunk.js"
   },
   {
-    "revision": "68a3451cbc8000a62efa",
-    "url": "/FilmCritic_Live/static/js/runtime-main.b9b6d952.js"
+    "revision": "d6714056f0d97f47f0b7",
+    "url": "/FilmCritic_Live/static/js/runtime-main.7de267f6.js"
   }
 ]);
