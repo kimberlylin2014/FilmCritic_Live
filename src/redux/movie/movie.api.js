@@ -1,7 +1,7 @@
 // public route
 export const getMoviesPublicAPI = async (searchWords) => {
     try {   
-        const resp = await fetch(`http://localhost:3000/movieSearchPublic/${searchWords}`)
+        const resp = await fetch(`https://filmcritic-app.herokuapp.com/movieSearchPublic/${searchWords}`)
         if(resp.status === 200) {
             const data = await resp.json();
             return data;
@@ -16,7 +16,7 @@ export const getMoviesPublicAPI = async (searchWords) => {
 
 export const getReviewsByMovieIDPublic = async() => {
     try {
-        const resp = await fetch(`http://localhost:3000/movies/top3`, {
+        const resp = await fetch(`https://filmcritic-app.herokuapp.com/movies/top3`, {
             method: "GET",
             headers: {'Content-Type' : 'application/json'}
         })
@@ -39,7 +39,7 @@ export const getMoviesPrivateAPI = async (searchObj) => {
     try {   
         const {token, movieSearch} = searchObj;
         console.log(movieSearch)
-        const resp = await fetch(`http://localhost:3000/movieSearchPrivate/${movieSearch}`, {
+        const resp = await fetch(`https://filmcritic-app.herokuapp.com/movieSearchPrivate/${movieSearch}`, {
             method: "GET",
             headers: {'Content-Type' : 'application/json', 'authorization' : `bearer ${token}`}
         })
@@ -64,7 +64,7 @@ export const submitMovieReview = async(reviewObj) => {
             review: reviewObj.review,
             score: reviewObj.score
         }
-        const resp = await fetch(`http://localhost:3000/users/${reviewObj.userID}/movies/${reviewObj.imdbID}/review`, {
+        const resp = await fetch(`https://filmcritic-app.herokuapp.com/users/${reviewObj.userID}/movies/${reviewObj.imdbID}/review`, {
             method: "POST",
             headers: {'Content-Type' : 'application/json', 'authorization' : `bearer ${reviewObj.token}`},
             body: JSON.stringify(reviewBody)
@@ -89,7 +89,7 @@ export const submitMovieReview = async(reviewObj) => {
 export const getReviewsByMovieID = async(reviewObj) => {
     console.log(reviewObj)
     try {
-        const resp = await fetch(`http://localhost:3000/users/${reviewObj.userID}/movies/${reviewObj.imdbID}/reviews`, {
+        const resp = await fetch(`https://filmcritic-app.herokuapp.com/users/${reviewObj.userID}/movies/${reviewObj.imdbID}/reviews`, {
             method: "GET",
             headers: {'Content-Type' : 'application/json', 'authorization' : `bearer ${reviewObj.token}`}
         })
@@ -114,7 +114,7 @@ export const updateReviewsByReviewID = async(reviewObj) => {
             review: reviewObj.review,
             fanscore: reviewObj.fanscore
         }
-        const resp = await fetch(`http://localhost:3000/users/${reviewObj.userID}/movies/${reviewObj.imdbID}/reviews/${reviewObj.reviewID}`, {
+        const resp = await fetch(`https://filmcritic-app.herokuapp.com/users/${reviewObj.userID}/movies/${reviewObj.imdbID}/reviews/${reviewObj.reviewID}`, {
             method: "PUT",
             headers: {'Content-Type' : 'application/json', 'authorization' : `bearer ${reviewObj.token}`},
             body: JSON.stringify(reviewBody)
@@ -135,7 +135,7 @@ export const updateReviewsByReviewID = async(reviewObj) => {
 
 export const deleteReviewByReviewID = async(reviewObj) => {
     try {
-        const resp = await fetch(`http://localhost:3000/users/${reviewObj.userID}/movies/${reviewObj.imdbID}/reviews/${reviewObj.reviewID}`, {
+        const resp = await fetch(`https://filmcritic-app.herokuapp.com/users/${reviewObj.userID}/movies/${reviewObj.imdbID}/reviews/${reviewObj.reviewID}`, {
             method: "DELETE",
             headers: {'Content-Type' : 'application/json', 'authorization' : `bearer ${reviewObj.token}`},
         })

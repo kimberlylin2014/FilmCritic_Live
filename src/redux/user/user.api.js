@@ -1,6 +1,6 @@
 export const registerUserAPI = async (payload) => {
     try {
-        const resp = await fetch('http://localhost:3000/register', {
+        const resp = await fetch('https://filmcritic-app.herokuapp.com/register', {
             method: "POST",
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify(payload)
@@ -19,7 +19,7 @@ export const registerUserAPI = async (payload) => {
 
 export const loginUserAPI = async (payload) => {
     try {
-        const resp = await fetch('http://localhost:3000/login', {
+        const resp = await fetch('https://filmcritic-app.herokuapp.com/login', {
             method: "POST",
             headers: {'Content-Type' : 'application/json'},
             body: JSON.stringify(payload)
@@ -38,7 +38,7 @@ export const loginUserAPI = async (payload) => {
 
 export const logoutUserAPI = async(token) => {
     try { 
-        const resp = await fetch('http://localhost:3000/signout', {
+        const resp = await fetch('https://filmcritic-app.herokuapp.com/signout', {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json',
