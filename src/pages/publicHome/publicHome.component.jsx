@@ -25,7 +25,7 @@ class PublicHome extends React.Component {
         console.log(this.props)
         return (
             <div className='PublicHome'>
-                {/* <Top3Banner {...this.props} /> */}
+                <Top3Banner {...this.props} />
                 <div className='container'>
    
                     <div className='row justify-content-center'>
