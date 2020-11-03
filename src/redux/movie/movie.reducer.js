@@ -28,7 +28,7 @@ const movieReducer = (state = INITIAL_STATE, action) => {
             return {
                 ...state,
                 isLoading: false,
-                top3: [...action.payload]
+                top3: true
             }
         case movieActionTypes.GET_MOVIESEARCH_SUCCESS:
         case movieActionTypes.GET_PRIVATE_MOVIES_SEARCH_SUCCESS:
