@@ -19,10 +19,11 @@ class PublicHome extends React.Component {
         const {resetMovieSearch} = this.props;
         window.sessionStorage.removeItem("token");
         resetMovieSearch();
+        const {getFavoriteMovieReviewsStart} = this.props;
+        getFavoriteMovieReviewsStart();
     }
 
     render() {
-        console.log(this.props)
         return (
             <div className='PublicHome'>
                 {/* <Top3Banner {...this.props} /> */}

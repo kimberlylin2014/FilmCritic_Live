@@ -28,7 +28,6 @@ class LoginForm extends React.Component {
         e.preventDefault();
         let { email, password } = this.state;
         const {loginUserStart} = this.props;
-        console.log(typeof(password))
         email += "@filmcritic.com"
         loginUserStart({email, password})
     }

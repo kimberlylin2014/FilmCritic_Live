@@ -31,8 +31,6 @@ function* getReviews({payload}) {
         } else if (data === 'Unauthorized') {
             throw Error(data)
         }
-        console.log(data)
-        console.log('get reviews after submitting review')
         yield put(getReviewsByMovieIDSuccess(data))
     }catch (error) {
         if(error.message === 'Unauthorized'){
@@ -54,7 +52,6 @@ function* getFavoriteMovieReviews() {
         if(!data) {
             throw Error('Can not get reviews for this movie')
         } 
-        console.log(data)
         yield put(getFavoriteMovieReviewsSuccess(data))
     }catch (error) {
 
@@ -147,7 +144,6 @@ function* updateReview({payload}) {
         } else if (data === 'Unauthorized') {
             throw Error(data)
         }
-        console.log(data)
         yield put(updateReviewSuccess(data))
     }catch (error) {
         if(error.message === 'Unauthorized'){
@@ -175,7 +171,6 @@ function* deleteReview({payload}) {
         } else if (data === 'Unauthorized') {
             throw Error(data)
         }
-        console.log(data)
         yield put(deleteReviewSuccess(data))
     }catch (error) {
         if(error.message === 'Unauthorized'){

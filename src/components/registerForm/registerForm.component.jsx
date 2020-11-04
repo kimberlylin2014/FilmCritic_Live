@@ -41,7 +41,6 @@ class RegisterForm extends React.Component {
         if(username.length < 3 || username.length > 10 || password.length !== 4 ) {
             registerUserFailure("Username needs to be 3-10 characters and password needs to be 4 characters.")
         }else {
-            console.log(typeof(password))
             this.setState({formErrorMessageDisplay: null});
             email += "@filmcritic.com"
             registerUserStart({email, password, username})

@@ -52,7 +52,6 @@ export const logoutUserAPI = async(token) => {
         return null;
     } catch (error) {
         console.debug('Caugh an error in logoutUserAPI');
-        console.log(error);
         return null;
     }
 }

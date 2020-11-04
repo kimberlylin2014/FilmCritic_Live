@@ -38,7 +38,6 @@ export const getReviewsByMovieIDPublic = async() => {
 export const getMoviesPrivateAPI = async (searchObj) => {
     try {   
         const {token, movieSearch} = searchObj;
-        console.log(movieSearch)
         const resp = await fetch(`https://filmcritic-app.herokuapp.com/movieSearchPrivate/${movieSearch}`, {
             method: "GET",
             headers: {'Content-Type' : 'application/json', 'authorization' : `bearer ${token}`}
@@ -87,7 +86,6 @@ export const submitMovieReview = async(reviewObj) => {
 
 
 export const getReviewsByMovieID = async(reviewObj) => {
-    console.log(reviewObj)
     try {
         const resp = await fetch(`https://filmcritic-app.herokuapp.com/users/${reviewObj.userID}/movies/${reviewObj.imdbID}/reviews`, {
             method: "GET",

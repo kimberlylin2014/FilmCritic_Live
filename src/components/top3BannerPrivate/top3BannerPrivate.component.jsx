@@ -24,10 +24,8 @@ class Top3BannerPrivate extends React.Component {
                     <div className='row justify-content-between align-items-center'>
                         <div className='col-lg-2 col-md-12'>
                         <h3 className='text-center'>POPULAR MOVIES</h3> 
-                        </div>
-                        
+                        </div>   
                         {top3.map(movieData => {
-                            console.log(movieData)
                             return  <div className='col-md-12 col-lg-3'>
                                 <Top3MovieReviewsPrivate {...movieData} key={movieData.imdbID}/>
                             </div>

@@ -10,13 +10,11 @@ class Top3Banner extends React.Component {
 
     componentDidMount() {
         const {getFavoriteMovieReviewsStart} = this.props;
-        console.log('function being called');
         getFavoriteMovieReviewsStart();
     }
 
     render(){
         const {top3} = this.props;
-        console.log(this.props)
         return(
             <div className='Top3Banner'>             
                 <div className='row justify-content-center align-items-center'>
@@ -25,7 +23,6 @@ class Top3Banner extends React.Component {
                         <AccessPrivatePageModal label='Write A Movie Review!' {...this.props} />
                     </div>
                     {top3.map(movieData => {
-                        console.log(movieData)
                         return  <div className='col-md-12 col-lg-3' key={movieData.imdbID}>
                             <Top3MovieReviews {...movieData} key={movieData.imdbID}/>
                         </div>
