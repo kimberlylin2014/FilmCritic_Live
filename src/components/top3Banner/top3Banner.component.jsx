@@ -4,9 +4,7 @@ import {connect} from 'react-redux';
 import { getFavoriteMovieReviewsStart } from '../../redux/movie/movie.actions';
 import { selectTopBanner } from '../../redux/movie/movie.selectors';
 import { createStructuredSelector } from 'reselect';
-// import Top3MovieReviews from '../top3MovieReviews/top3MovieReviews.component';
-import Top3MovieReviewsContainer from '../top3MovieReviews/top3MovieReviews.container';
-
+import Top3MovieReviews from '../top3MovieReviews/top3MovieReviews.component';
 import AccessPrivatePageModal from '../accessPrivatePageModal/accessPrivatePageModal.component';
 
 class Top3Banner extends React.Component {
@@ -33,7 +31,7 @@ class Top3Banner extends React.Component {
                     {top3.map(movieData => {
                         console.log(movieData)
                         return  <div className='col-md-12 col-lg-3' key={movieData.imdbID}>
-                            <Top3MovieReviewsContainer {...movieData} key={movieData.imdbID}/>
+                            <Top3MovieReviews {...movieData} key={movieData.imdbID}/>
                         </div>
                     })}
                 </div>
@@ -42,14 +40,15 @@ class Top3Banner extends React.Component {
     }
 }
 
-const mapDispatchToProps = (dispatch) => {
-    return {
-        getFavoriteMovieReviewsStart: () =>  dispatch(getFavoriteMovieReviewsStart())
-    }
-}
+// const mapDispatchToProps = (dispatch) => {
+//     return {
+//         getFavoriteMovieReviewsStart: () =>  dispatch(getFavoriteMovieReviewsStart())
+//     }
+// }
 
-const mapStateToProps = createStructuredSelector({
-    top3: selectTopBanner
-})
+// const mapStateToProps = createStructuredSelector({
+//     top3: selectTopBanner
+// })
 
-export default connect(mapStateToProps, mapDispatchToProps)(Top3Banner);
+// export default connect(mapStateToProps, mapDispatchToProps)(Top3Banner);
+export default Top3Banner;

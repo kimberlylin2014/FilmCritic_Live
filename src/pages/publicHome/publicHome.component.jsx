@@ -4,11 +4,12 @@ import { loginUserStart } from '../../redux/user/user.actions';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 import { selectCurrentUser } from '../../redux/user/user.selectors';
-import { selectMovieList, selectIsMovieListLoading } from '../../redux/movie/movie.selectors';
+import { selectMovieList, selectIsMovieListLoading, selectTopBanner } from '../../redux/movie/movie.selectors';
 import PublicMovieSearchBar from '../../components/publicMovieSearchBar/publicMovieSearchBar.component';
 import MovieListContainer from '../../components/movieList/movieList.container';
-import { resetMovieSearch } from '../../redux/movie/movie.actions';
-import Top3Banner from '../../components/top3Banner/top3Banner.component';
+import { resetMovieSearch, getFavoriteMovieReviewsStart } from '../../redux/movie/movie.actions';
+// import Top3Banner from '../../components/top3Banner/top3Banner.component';
+import Top3BannerContainer from '../../components/top3Banner/top3Banner.container';
 
 class PublicHome extends React.Component {
     constructor(props) {
@@ -25,7 +26,8 @@ class PublicHome extends React.Component {
         console.log(this.props)
         return (
             <div className='PublicHome'>
-                <Top3Banner {...this.props} />
+                <Top3BannerContainer {...this.props} />
+                {/* <Top3Banner {...this.props} /> */}
                 <div className='container'>
    
                     <div className='row justify-content-center'>
@@ -47,14 +49,16 @@ class PublicHome extends React.Component {
 const mapDispatchToProps = (dispatch) => {
     return {
       loginUserStart: (credentials) => dispatch(loginUserStart(credentials)),
-      resetMovieSearch: () =>  dispatch(resetMovieSearch())
+      resetMovieSearch: () =>  dispatch(resetMovieSearch()),
+      getFavoriteMovieReviewsStart: () =>  dispatch(getFavoriteMovieReviewsStart())
     }
 }
 
 const mapStateToProps = createStructuredSelector({
     currentUser: selectCurrentUser,
     movieList: selectMovieList,
-    isMovieListLoading: selectIsMovieListLoading
+    isMovieListLoading: selectIsMovieListLoading,
+    top3: selectTopBanner
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(PublicHome);
