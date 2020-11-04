@@ -148,7 +148,7 @@ class Top3MovieReviewsPrivate extends React.Component {
                             <div className='rating'>   
                                 <div style={{width: '80px', height: '80px'}}>
                                     <CircularProgressbarWithChildren 
-                                        value={this.state.audienceRating}
+                                        value={this.calculateAudienceRating()}
                                         strokeWidth= {11}
                                         styles={buildStyles({
                                             rotation: 0,
