@@ -1,9 +1,5 @@
 import React from 'react';
 import './top3Banner.styles.scss';
-import {connect} from 'react-redux';
-import { getFavoriteMovieReviewsStart } from '../../redux/movie/movie.actions';
-import { selectTopBanner } from '../../redux/movie/movie.selectors';
-import { createStructuredSelector } from 'reselect';
 import Top3MovieReviews from '../top3MovieReviews/top3MovieReviews.component';
 import AccessPrivatePageModal from '../accessPrivatePageModal/accessPrivatePageModal.component';
 
@@ -40,15 +36,4 @@ class Top3Banner extends React.Component {
     }
 }
 
-// const mapDispatchToProps = (dispatch) => {
-//     return {
-//         getFavoriteMovieReviewsStart: () =>  dispatch(getFavoriteMovieReviewsStart())
-//     }
-// }
-
-// const mapStateToProps = createStructuredSelector({
-//     top3: selectTopBanner
-// })
-
-// export default connect(mapStateToProps, mapDispatchToProps)(Top3Banner);
 export default Top3Banner;

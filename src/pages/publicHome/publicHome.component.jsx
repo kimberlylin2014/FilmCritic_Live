@@ -8,8 +8,7 @@ import { selectMovieList, selectIsMovieListLoading, selectTopBanner } from '../.
 import PublicMovieSearchBar from '../../components/publicMovieSearchBar/publicMovieSearchBar.component';
 import MovieListContainer from '../../components/movieList/movieList.container';
 import { resetMovieSearch, getFavoriteMovieReviewsStart } from '../../redux/movie/movie.actions';
-// import Top3Banner from '../../components/top3Banner/top3Banner.component';
-import Top3BannerContainer from '../../components/top3Banner/top3Banner.container';
+import Top3Banner from '../../components/top3Banner/top3Banner.component';
 
 class PublicHome extends React.Component {
     constructor(props) {
@@ -26,7 +25,6 @@ class PublicHome extends React.Component {
         console.log(this.props)
         return (
             <div className='PublicHome'>
-                <Top3BannerContainer {...this.props} />
                 {/* <Top3Banner {...this.props} /> */}
                 <div className='container'>
    

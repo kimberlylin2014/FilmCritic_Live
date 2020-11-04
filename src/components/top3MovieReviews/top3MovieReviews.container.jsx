@@ -2,12 +2,12 @@ import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 import { selectIsTop3MovieListLoading } from '../../redux/movie/movie.selectors';
 import WithSpinner from '../withSpinner/withSpinner.component';
-import Top3Banner from './top3Banner.component';
+import Top3MovieReviews from './top3MovieReviews.component';
 
 const mapStateToProps = createStructuredSelector({
     isLoading: selectIsTop3MovieListLoading
 })
 
-const Top3BannerContainer = connect(mapStateToProps)(WithSpinner(Top3Banner, '600px'));
+const Top3MovieReviewsContainer = connect(mapStateToProps)(WithSpinner(Top3MovieReviews, '600px'));
 
-export default Top3BannerContainer;
+export default Top3MovieReviewsContainer;
