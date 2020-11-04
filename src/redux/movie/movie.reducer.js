@@ -83,7 +83,6 @@ const movieReducer = (state = INITIAL_STATE, action) => {
                 errorMessage: null,
                 isLoading: false,
                 sessionExpireWarning: false,
-                top3: [],
                 top3isLoading: false
             }
         default:
