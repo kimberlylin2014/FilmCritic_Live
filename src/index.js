@@ -12,7 +12,6 @@ import {PersistGate} from 'redux-persist/integration/react';
 // import * as serviceWorker from './serviceWorker';
 import { unregister as unregisterServiceWorker } from './registerServiceWorker'
 
-unregisterServiceWorker();
 import ScrollToTopComponent from './components/scrollToTop/scrollToTop.component';
 
 ReactDOM.render(
