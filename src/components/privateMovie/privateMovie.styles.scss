@@ -16,6 +16,7 @@
             @media screen and (max-width: 1200px) {
                 margin: 20px auto 0;
             }
+
         }
         .details {
             background-color: #ffffff;
@@ -28,6 +29,9 @@
             @media screen and (max-width: 1200px) {
                 margin-top: 20px;
                 padding: 15px 0 15px 0;
+            }
+            @media screen and (max-width: 500px) {
+                padding: 30px 0 30px 0;
             }
             .top {
                 h4 {
@@ -53,6 +57,15 @@
                     justify-content: center;
                     align-items: center;
                     width: 50%;
+                    @media screen and (max-width: 500px) {
+                        img {
+                            width: 40px;
+                        }
+                        .total {
+                            font-weight: 400;
+                            font-size: 12px;
+                        }
+                    }
                     .critic-score {
                         display: flex;
                         align-items: center;
@@ -74,6 +87,15 @@
                     justify-content: center;
                     align-items: center;
                     width: 50%;
+                    @media screen and (max-width: 500px) {
+                        img {
+                            width: 35px;
+                        }
+                        .total {
+                            font-weight: 400;
+                            font-size: 12px;
+                        }
+                    }
                     .fan-score {
                         display: flex;
                         align-items: center;
@@ -82,7 +104,7 @@
                             padding: 0;
                             font-weight: 600;
                             font-size: 20px;
-                        }
+                        }   
                     }
                     .total {
                         padding-top: 4px;
