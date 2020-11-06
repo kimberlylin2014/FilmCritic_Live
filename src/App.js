@@ -46,8 +46,8 @@ class App extends React.Component {
                   return currentUser ? <SingleMoviePage {...props}/> :  <Redirect to='/login'/>
                 }} 
                 />
-                <Route path='/*' component={NotFoundPage} />
-                <Route  component={NotFoundPage} />
+                {/* <Route path='/*' component={NotFoundPage} /> */}
+                <Route component={NotFoundPage} />
             </Switch>
             <Footer />
           </Suspense>
