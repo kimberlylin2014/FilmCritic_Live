@@ -1,1 +1,0 @@
-{"version":3,"sources":["footer.styles.scss"],"names":[],"mappings":"AAAA,QACI,wBAAyB,CACzB,UAAY,CACZ,WAAY,CACZ,iBAAkB,CAClB,YAAa,CALjB,UAOQ,QAAS","file":"11.080b5934.chunk.css","sourcesContent":[".Footer {\n    background-color: #323232;\n    color: white;\n    height: 50px;\n    text-align: center;\n    padding: 10px;\n    p {\n        margin: 0;\n    }\n}"]}
