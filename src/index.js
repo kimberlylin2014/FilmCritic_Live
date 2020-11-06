@@ -13,7 +13,7 @@ import ScrollToTopComponent from './components/scrollToTop/scrollToTop.component
 
 ReactDOM.render(
   <Provider store={store}>
-      <HashRouter basename='/'>
+      <HashRouter >
         <PersistGate persistor={persistor}>
           <ScrollToTopComponent>
              <App />
