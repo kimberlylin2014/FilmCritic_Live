@@ -38,8 +38,8 @@ class RegisterForm extends React.Component {
         this.setState({formErrorMessageDisplay: null, formErrorMessage: null});
         let { email, password, username } = this.state;
         const {registerUserStart, registerUserFailure} = this.props;
-        if(username.length < 3 || username.length > 10 || password.length !== 4 ) {
-            registerUserFailure("Username needs to be 3-10 characters and password needs to be 4 characters.")
+        if(username.length < 3 || username.length > 10 || password.length !== 6 ) {
+            registerUserFailure("Username needs to be 3-10 characters and password needs to be 6 characters.")
         }else {
             this.setState({formErrorMessageDisplay: null});
             email += "@filmcritic.com"
@@ -92,7 +92,7 @@ class RegisterForm extends React.Component {
                         id='password'
                         type='password'
                         name='password'
-                        placeholder='4 characters'                    
+                        placeholder='6 characters only'                    
                         onChange = {this.handleOnChange}
                         onKeyPress = {this.handleOnKeyPress}
                     />
