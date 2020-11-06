@@ -5,13 +5,13 @@
     "static/js/1.980bfbb5.chunk.js": "/FilmCritic_Live/static/js/1.980bfbb5.chunk.js",
     "static/js/1.980bfbb5.chunk.js.map": "/FilmCritic_Live/static/js/1.980bfbb5.chunk.js.map",
     "main.css": "/FilmCritic_Live/static/css/main.5ab3fb3d.chunk.css",
-    "main.js": "/FilmCritic_Live/static/js/main.46c60ea2.chunk.js",
-    "main.js.map": "/FilmCritic_Live/static/js/main.46c60ea2.chunk.js.map",
+    "main.js": "/FilmCritic_Live/static/js/main.b7d53626.chunk.js",
+    "main.js.map": "/FilmCritic_Live/static/js/main.b7d53626.chunk.js.map",
     "runtime-main.js": "/FilmCritic_Live/static/js/runtime-main.e3cb8ee4.js",
     "runtime-main.js.map": "/FilmCritic_Live/static/js/runtime-main.e3cb8ee4.js.map",
     "static/css/4.d9ad5f5c.chunk.css": "/FilmCritic_Live/static/css/4.d9ad5f5c.chunk.css",
-    "static/js/4.b7153a16.chunk.js": "/FilmCritic_Live/static/js/4.b7153a16.chunk.js",
-    "static/js/4.b7153a16.chunk.js.map": "/FilmCritic_Live/static/js/4.b7153a16.chunk.js.map",
+    "static/js/4.c7655657.chunk.js": "/FilmCritic_Live/static/js/4.c7655657.chunk.js",
+    "static/js/4.c7655657.chunk.js.map": "/FilmCritic_Live/static/js/4.c7655657.chunk.js.map",
     "static/css/5.00e13b41.chunk.css": "/FilmCritic_Live/static/css/5.00e13b41.chunk.css",
     "static/js/5.9912a3fd.chunk.js": "/FilmCritic_Live/static/js/5.9912a3fd.chunk.js",
     "static/js/5.9912a3fd.chunk.js.map": "/FilmCritic_Live/static/js/5.9912a3fd.chunk.js.map",
@@ -40,7 +40,7 @@
     "static/js/13.09750f05.chunk.js": "/FilmCritic_Live/static/js/13.09750f05.chunk.js",
     "static/js/13.09750f05.chunk.js.map": "/FilmCritic_Live/static/js/13.09750f05.chunk.js.map",
     "index.html": "/FilmCritic_Live/index.html",
-    "precache-manifest.3f960f9b2faa4b2f26c80b7188805270.js": "/FilmCritic_Live/precache-manifest.3f960f9b2faa4b2f26c80b7188805270.js",
+    "precache-manifest.6c3b781aa1d084419f484208b4970f6f.js": "/FilmCritic_Live/precache-manifest.6c3b781aa1d084419f484208b4970f6f.js",
     "service-worker.js": "/FilmCritic_Live/service-worker.js",
     "static/css/10.76e949b1.chunk.css.map": "/FilmCritic_Live/static/css/10.76e949b1.chunk.css.map",
     "static/css/11.080b5934.chunk.css.map": "/FilmCritic_Live/static/css/11.080b5934.chunk.css.map",
@@ -53,13 +53,13 @@
     "static/css/8.bc43d90d.chunk.css.map": "/FilmCritic_Live/static/css/8.bc43d90d.chunk.css.map",
     "static/css/9.bcb6155b.chunk.css.map": "/FilmCritic_Live/static/css/9.bcb6155b.chunk.css.map",
     "static/css/main.5ab3fb3d.chunk.css.map": "/FilmCritic_Live/static/css/main.5ab3fb3d.chunk.css.map",
-    "static/js/4.b7153a16.chunk.js.LICENSE.txt": "/FilmCritic_Live/static/js/4.b7153a16.chunk.js.LICENSE.txt"
+    "static/js/4.c7655657.chunk.js.LICENSE.txt": "/FilmCritic_Live/static/js/4.c7655657.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.e3cb8ee4.js",
     "static/css/4.d9ad5f5c.chunk.css",
-    "static/js/4.b7153a16.chunk.js",
+    "static/js/4.c7655657.chunk.js",
     "static/css/main.5ab3fb3d.chunk.css",
-    "static/js/main.46c60ea2.chunk.js"
+    "static/js/main.b7d53626.chunk.js"
   ]
 }
