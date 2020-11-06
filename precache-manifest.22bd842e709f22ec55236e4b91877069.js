@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "05c6a994ac224bd8d1a214c46e873dbe",
+    "revision": "24fca09ae14ca7a30e3a157725e10ee0",
     "url": "/FilmCritic_Live/index.html"
   },
   {
@@ -44,7 +44,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/FilmCritic_Live/static/css/9.bcb6155b.chunk.css"
   },
   {
-    "revision": "245a39f985f3a82fcdcf",
+    "revision": "c7b1297d476ef3e13547",
     "url": "/FilmCritic_Live/static/css/main.5ab3fb3d.chunk.css"
   },
   {
@@ -100,8 +100,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/FilmCritic_Live/static/js/9.a69c6c64.chunk.js"
   },
   {
-    "revision": "245a39f985f3a82fcdcf",
-    "url": "/FilmCritic_Live/static/js/main.a1ebe58d.chunk.js"
+    "revision": "c7b1297d476ef3e13547",
+    "url": "/FilmCritic_Live/static/js/main.b540921a.chunk.js"
   },
   {
     "revision": "88ce8a43c3dae70bdd8a",
