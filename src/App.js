@@ -19,7 +19,9 @@ const Footer = lazy(() => import('./components/footer/footer.component'));
 const SessionExpireModal = lazy(() => import('./components/sessionExpireModal/sessionExpireModal.component'));
 
 class App extends React.Component {
+
   render() {
+    console.log(process.env.PUBLIC_URL)
     const { currentUser, sessionExpireWarning } = this.props;
     return (
       <div className='App'>
@@ -28,7 +30,7 @@ class App extends React.Component {
           <Suspense fallback={<p></p>}>
             <Header />
             {sessionExpireWarning ? <SessionExpireModal/> : ''}
-            {/* <Switch>
+            <Switch>
                 <Route exact path='/' render={() => {
                   return currentUser ? <Redirect to='/home'/> :  <PublicHome />
                 }}
@@ -46,27 +48,7 @@ class App extends React.Component {
                   return currentUser ? <SingleMoviePage {...props}/> :  <Redirect to='/login'/>
                 }} 
                 />
-                <Route path='/*' component={NotFoundPage} />
-            </Switch> */}
-                        <Switch>
-                <Route exact path={process.env.PUBLIC_URL + '/'} render={() => {
-                  return currentUser ? <Redirect to='/home'/> :  <PublicHome />
-                }}
-                />
-                <Route exact path={process.env.PUBLIC_URL + '/register'} render={(props) => {
-                  return currentUser ? <Redirect to='/home'/>:  <Register {...props} />
-                }}/>
-                <Route exact path={process.env.PUBLIC_URL + '/login'} render={(props) => {
-                  return currentUser ? <Redirect to='/home' /> :  <Login {...props} />
-                }}/>
-                <Route exact path={process.env.PUBLIC_URL + '/home'} render={() => {
-                  return currentUser ? <PrivateHome /> :  <Redirect to='/login'/>
-                }}/>
-                <Route exact path={process.env.PUBLIC_URL + '/movies/:imdbID/reviews'} render={(props) => {
-                  return currentUser ? <SingleMoviePage {...props}/> :  <Redirect to='/login'/>
-                }} 
-                />
-                <Route path='/*' component={NotFoundPage} />
+                <Route path='/' component={NotFoundPage} />
             </Switch>
             <Footer />
           </Suspense>
