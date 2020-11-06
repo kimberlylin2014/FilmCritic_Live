@@ -7,6 +7,11 @@
             border-radius: 10px;
             box-shadow: 0 0 8px rgba(0,0,0,.12);
             background: #fff;
+            span {
+                color: #3797a4;
+                font-weight: 600;
+                cursor: pointer;
+            }
         }
     }
 }

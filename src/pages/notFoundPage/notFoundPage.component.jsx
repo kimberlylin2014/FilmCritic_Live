@@ -1,7 +1,8 @@
 import React from 'react';
 import './notFoundPage.styles.scss';
+import { withRouter } from 'react-router-dom';
 
-const NotFoundPage = () => {
+const NotFoundPage = ({history}) => {
     return (
         <div className='NotFoundPage'>
             <div className='container'>
@@ -10,7 +11,9 @@ const NotFoundPage = () => {
                         <img src="https://www.flaticon.com/svg/static/icons/svg/1476/1476773.svg" alt="404" width='100px'
                         style={{marginRight: "20px"}}
                         />
-                       <h1>404 Error. Page Doesn't Exist.</h1>
+                       <h1>This Page Does Not Exist. <br></br> Return <span onClick={() => {
+                           history.push('/')
+                       }}>Home</span>. </h1>
                     </div>
                 </div>
             </div>
@@ -18,4 +21,4 @@ const NotFoundPage = () => {
     )
 }
 
-export default NotFoundPage;
+export default withRouter(NotFoundPage);
