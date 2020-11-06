@@ -47,7 +47,9 @@ class App extends React.Component {
                 }} 
                 />
                 {/* <Route path='/*' component={NotFoundPage} /> */}
-                <Route component={NotFoundPage} />
+                <Route render={() => {
+                  return  <NotFoundPage />
+                }} />
             </Switch>
             <Footer />
           </Suspense>
